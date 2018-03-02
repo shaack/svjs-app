@@ -19,7 +19,7 @@ if (!Element.prototype.matches) {
         };
 }
 
-export class Event {
+export class Events {
     static delegate(element, event, selector, handler) {
         element.addEventListener(event, function (event) {
             let target = event.target;
