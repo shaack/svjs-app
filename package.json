@@ -1,6 +1,6 @@
 {
   "name": "svjs-app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A minimal ES6 JavaScript frontend app framework.",
   "main": "/src/svjs/app/App.js",
   "scripts": {
