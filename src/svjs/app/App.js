@@ -1,12 +1,13 @@
 /**
- * Author: shaack
- * Date: 02.03.2018
+ * Author and copyright: Stefan Haack (https://shaack.com)
+ * Repository: https://github.com/shaack/cm-chessboard
+ * License: MIT, see file 'LICENSE'
  */
 
 let app = null;
 
 export class App {
-    constructor(config) {
+    constructor(config = {}) {
         this.config = config;
         this.model = {};
         this.components = {};
