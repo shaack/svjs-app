@@ -4,10 +4,10 @@
  * License: MIT, see file 'LICENSE'
  */
 
- export class Component {
+export class Component {
     constructor(element = null, config = {}) {
-        this.config = config;
-        this.element = element;
-        this.components = {};
+        this.config = config
+        this.element = element
+        this.components = {}
     }
- }
+}

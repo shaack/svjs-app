@@ -4,22 +4,11 @@
  * License: MIT, see file 'LICENSE'
  */
 
-let app = null
-
-export class App {
-
-    constructor(config = {}) {
+export class Module {
+    constructor(element = null, config = {}) {
         this.config = config
+        this.element = element
         this.state = {}
         this.components = {}
     }
-
-    static create(config) {
-        app = new this(config)
-    }
-
-    static get() {
-        return app
-    }
-    
 }
