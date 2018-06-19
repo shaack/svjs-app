@@ -5,9 +5,9 @@
  */
 
 export class Module {
-    constructor(element = null, config = {}) {
-        this.config = config
+    constructor(element = null, props = {}) {
         this.element = element
+        this.props = props
         this.state = {}
         this.components = {}
     }

@@ -11,15 +11,21 @@ export class App {
     constructor(config = {}) {
         this.config = config
         this.state = {}
-        this.components = {}
+        this.modules = []
+        this.components = []
     }
 
     static create(config) {
         app = new this(config)
+        return app
     }
 
     static get() {
         return app
     }
-    
+
+    addModule(module) {
+        this.modules.push(module)
+    }
+
 }
