@@ -1,5 +1,6 @@
 {
   "name": "svjs-app",
+  "author": "Stefan Haack (http://shaack.com)",
   "version": "1.1.1",
   "description": "A minimal ES6 JavaScript frontend app framework.",
   "main": "src/svjs-app/App.js",
@@ -13,7 +14,6 @@
   "keywords": [
     "ES6"
   ],
-  "author": "https://shaack.com",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/shaack/svjs-app/issues"
