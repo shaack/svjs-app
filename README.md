@@ -2,33 +2,48 @@
 
 A minimal ES6 JavaScript frontend app framework. It´s so minimal that
 it has fewer than 100 lines of code, but being enough to build complex
-reactive SPAs, together with the other [sjvs](https://github.com/shaack/svjs) Parts. 
+reactive SPAs, together with the other [sjvs](https://github.com/shaack/svjs) ES6-Modules. 
 
 ## Documentation
 
-### App
-
-An App has Modules and Components. Modules have Components.
-
 ```
 App -> Components
-App -> Modules -> Components
+App -> AppModules -> Components
 ```
+
+### App
+
+- Has its own **State**
+- Has **Props**
+- May contain AppModules and/or Components
+
+An `App` is the coded representation of a SPA (Single Page Application). It may contain `AppModules` and/or
+`Components`. An `App` has a changeable `State` and constant `Props`. 
 
 ## AppModule
 
-Modules are parts of an App. Examples for Modules are `Chat` or `ToDo List`.
-A AppModule can have a State (changeable) and Props (constant configuration).
+- Can be associated to a **container DOM element** 
+- Has its own **State**
+- Has **Props**
+- May contains Components
 
-A module is mostly associated with a container DOM element.   
+`AppModules` are parts of an `App`. Examples for AppModules are "Chat" or "ToDo List".
+An `AppModule` can have a `State` (changeable) and `Props` (constant configuration).
+
+An `AppModule` is mostly associated with a container DOM element.   
 
 A AppModule can and should have multiple Components.
 
 ### Component
 
-A Component has no own State, it shares the State of the parent-AppModule.
+- Can be associated to a **container DOM element**
+- Uses the State of the AppModule or App
+- Has **Props** 
+- May contain Components
 
-A Component in most cases is related to a container DOM element and part of a AppModule. 
-Examples for Components are `SearchInput` or `ChatOutput` or something like this.
+A `Component` has no own `State`, it shares the `State` of the parent-`AppModule`.
 
-A Components can have sub-Components.
+A `Component` in most cases is related to a container DOM element and part of a `AppModule`. 
+Examples for `Components` are "SearchInput" or "ChatOutput" or something like this.
+
+A `Component` can have sub-Components.
