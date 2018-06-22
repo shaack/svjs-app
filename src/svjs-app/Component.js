@@ -5,9 +5,11 @@
  */
 
 export class Component {
+
     constructor(container = null, props = {}) {
         this.container = container
         this.props = props
         this.components = []
     }
+
 }

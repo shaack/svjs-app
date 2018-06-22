@@ -5,6 +5,7 @@
  */
 
 export class AppModule {
+
     constructor(container = null, props = {}) {
         this.container = container
         this.props = props
