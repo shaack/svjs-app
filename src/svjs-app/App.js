@@ -8,8 +8,8 @@ let app = null
 
 export class App {
 
-    constructor(config = {}) {
-        this.config = config
+    constructor(props = {}) {
+        this.props = props
         this.state = {}
         this.modules = []
         this.components = []

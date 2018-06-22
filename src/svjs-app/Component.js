@@ -5,9 +5,9 @@
  */
 
 export class Component {
-    constructor(element = null, config = {}) {
-        this.config = config
-        this.element = element
-        this.components = {}
+    constructor(container = null, props = {}) {
+        this.container = container
+        this.props = props
+        this.components = []
     }
 }
