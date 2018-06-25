@@ -1,7 +1,7 @@
 {
   "name": "svjs-app",
   "author": "Stefan Haack (http://shaack.com)",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A minimal ES6 JavaScript frontend app framework.",
   "main": "src/svjs-app/App.js",
   "scripts": {
