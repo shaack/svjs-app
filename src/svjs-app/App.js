@@ -22,4 +22,8 @@ export class App {
         return app
     }
 
+    addModule(module) {
+        module.app = this
+        this.modules.push(module)
+    }
 }

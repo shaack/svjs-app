@@ -4,18 +4,21 @@
  * License: MIT, see file 'LICENSE'
  */
 
-import {App} from "./App.js"
-
 export class AppModule {
 
-    constructor(app, container = null, props = {}) {
-        if(!app || !app instanceof App) throw "app needed"
-        this.app = app
+    constructor(container = null, props = {}) {
+        /* @var App */
+        this.app = null
+        /* @var Element */
         this.container = container
         this.props = props
         this.state = {}
         this.components = []
-        this.app.modules.push(this)
+    }
+
+    addComponent(component) {
+        component.module = this
+        this.components.push(component)
     }
 
 }
