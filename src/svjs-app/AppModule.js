@@ -14,8 +14,8 @@ export class AppModule {
         this.components = []
     }
 
-    addComponent(componentType, container = null, props = {}) {
-        const component = new componentType(this, container, props)
+    addComponent(componentType, props = {}) {
+        const component = new componentType(this, props)
         this.components.push(component)
         return component
     }

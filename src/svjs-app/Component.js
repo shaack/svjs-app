@@ -6,14 +6,14 @@
 
 export class Component {
 
-    constructor(module, container = null, props = {}) {
+    constructor(module, props = {}) {
         this.module = module
         this.props = props
         this.components = []
     }
 
-    addComponent(componentType, container = null, props = {}) {
-        const component = new componentType(this.module, container, props)
+    addComponent(componentType, props = {}) {
+        const component = new componentType(this.module, props)
         this.components.push(component)
         return component
     }
