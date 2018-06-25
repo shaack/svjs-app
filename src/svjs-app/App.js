@@ -22,9 +22,10 @@ export class App {
         return app
     }
 
-    addModule(module) {
-        module.app = this
+    addModule(moduleType, container = null, props = {}) {
+        const module = new moduleType(this, container, props)
         this.modules.push(module)
         return module
     }
+
 }

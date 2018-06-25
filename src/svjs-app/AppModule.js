@@ -6,18 +6,16 @@
 
 export class AppModule {
 
-    constructor(container = null, props = {}) {
-        /* @var App */
-        this.app = null
-        /* @var Element */
+    constructor(app, container = null, props = {}) {
+        this.app = app
         this.container = container
         this.props = props
         this.state = {}
         this.components = []
     }
 
-    addComponent(component) {
-        component.module = this
+    addComponent(componentType, container = null, props = {}) {
+        const component = new componentType(this, container, props)
         this.components.push(component)
         return component
     }
