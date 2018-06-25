@@ -1,10 +1,10 @@
-import {App} from "./App"
-
 /**
  * Author and copyright: Stefan Haack (https://shaack.com)
  * Repository: https://github.com/shaack/cm-chessboard
  * License: MIT, see file 'LICENSE'
  */
+
+import {AppModule} from "./AppModule.js"
 
 export class Component {
 
