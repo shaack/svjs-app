@@ -19,6 +19,7 @@ export class Component {
         component.parent = this
         component.module = this.module
         this.components.push(component)
+        return component
     }
 
 }

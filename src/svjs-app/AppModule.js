@@ -19,6 +19,7 @@ export class AppModule {
     addComponent(component) {
         component.module = this
         this.components.push(component)
+        return component
     }
 
 }
