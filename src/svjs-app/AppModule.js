@@ -6,11 +6,13 @@
 
 export class AppModule {
 
-    constructor(container = null, props = {}) {
+    constructor(app = null, container = null, props = {}) {
+        this.app = app
         this.container = container
         this.props = props
         this.state = {}
         this.components = []
+        this.app.modules.push(this)
     }
 
 }

@@ -6,10 +6,12 @@
 
 export class Component {
 
-    constructor(container = null, props = {}) {
+    constructor(module = null, container = null, props = {}) {
+        this.module = module
         this.container = container
         this.props = props
         this.components = []
+        this.module.components.push(this)
     }
 
 }

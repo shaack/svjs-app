@@ -7,25 +7,25 @@ reactive SPAs, together with the other [sjvs](https://github.com/shaack/svjs) ES
 ## Documentation
 
 ```
-App -> Components
 App -> AppModules -> Components
 ```
 
 ### App
 
-- Has its own **State**
+- Is **stateless**
+- Is **singleton**
 - Has **Props**
-- May contain AppModules and/or Components
+- Contains **AppModules**
 
-An `App` is the coded representation of a SPA (Single Page Application). It may contain `AppModules` and/or
-`Components`. An `App` has a changeable `State` and constant `Props`. 
+An `App` is the coded representation of a SPA (Single Page Application). It may contain `AppModules`. 
+An `App` is stateless and has a constant configuration (`props`). 
 
 ## AppModule
 
 - Can be associated to a **container DOM element** 
-- Has its own **State**
+- Has a **State**
 - Has **Props**
-- May contains Components
+- May contains **Components**
 
 `AppModules` are parts of an `App`. Examples for AppModules are "Chat" or "ToDo List".
 An `AppModule` can have a `State` (changeable) and `Props` (constant configuration).

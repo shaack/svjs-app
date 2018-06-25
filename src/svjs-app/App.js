@@ -10,22 +10,16 @@ export class App {
 
     constructor(props = {}) {
         this.props = props
-        this.state = {}
         this.modules = []
-        this.components = []
     }
 
-    static create(config) {
-        app = new this(config)
+    static create(props) {
+        app = new this(props)
         return app
     }
 
     static get() {
         return app
-    }
-
-    addModule(module) {
-        this.modules.push(module)
     }
 
 }
