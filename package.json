@@ -1,22 +1,22 @@
 {
-  "name": "svjs-app",
+  "name": "modulo-app",
   "author": "Stefan Haack (http://shaack.com)",
   "version": "1.2.6",
   "description": "A minimal ES6 JavaScript frontend app framework.",
-  "main": "src/svjs-app/App.js",
+  "main": "src/modulo-app/App.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shaack/svjs-app.git"
+    "url": "git+https://github.com/shaack/modulo-app.git"
   },
   "keywords": [
     "ES6"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shaack/svjs-app/issues"
+    "url": "https://github.com/shaack/modulo-app/issues"
   },
-  "homepage": "https://github.com/shaack/svjs-app#readme"
+  "homepage": "https://github.com/shaack/modulo-app#readme"
 }
