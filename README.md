@@ -17,19 +17,14 @@ App -> AppModules -> Components
 - Has **Props**
 - Contains **AppModules**
 
-An `App` is the coded representation of a SPA (Single Page Application). It may contain `AppModules`. 
-An `App` is stateless and has a constant configuration (`props`). 
+An `App` is the coded representation of a SPA (Single Page Application). It may contain `Components`. 
+An `App` is stateless and has a constant configuration (`props`).
 
 ## Component
-
-- Can be associated to a **container DOM element** 
+ 
 - Has a **State**
 - Has **Props**
 - May contain Child-Components
-
-`Components` are parts of an `App`. Examples for Components are "Chat" or "ToDo List".
-A `Component` can have a `State` (changeable) and `Props` (constant configuration).
-
-A `Component` is mostly associated with a container DOM element.   
-
-A `Component` can have Child-Components.
+- `Components` are parts of an `App`. Examples for Components are "Chat" or "ToDo List".
+- A `Component` can have a `State` (changeable) and `Props` (constant configuration).
+- A `Component` can have Child-Components.
