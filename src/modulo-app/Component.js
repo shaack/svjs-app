@@ -4,7 +4,7 @@
  * License: MIT, see file 'LICENSE'
  */
 
-export class AppModule {
+export class Component {
 
     constructor(app, container = null, props = {}) {
         this.app = app
@@ -14,8 +14,8 @@ export class AppModule {
         this.components = []
     }
 
-    addComponent(componentType, props = {}) {
-        const component = new componentType(this, props)
+    addComponent(componentType, container = null, props = {}) {
+        const component = new componentType(this, container, props)
         this.components.push(component)
         return component
     }

@@ -10,7 +10,7 @@ export class App {
 
     constructor(props = {}) {
         this.props = props
-        this.modules = []
+        this.components = []
     }
 
     static create(props) {
@@ -22,10 +22,10 @@ export class App {
         return app
     }
 
-    addModule(moduleType, container = null, props = {}) {
-        const module = new moduleType(this, container, props)
-        this.modules.push(module)
-        return module
+    addComponent(componentType, container = null, props = {}) {
+        const component = new componentType(this, container, props)
+        this.components.push(component)
+        return component
     }
 
 }
